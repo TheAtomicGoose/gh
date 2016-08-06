@@ -7,8 +7,8 @@ function gh() {
   user=$1
   repo=$2
 
-  user_path=$HOME/src/github.com/$user
-  local_path=$user_path/$repo
+  user_path=$HOME/src/github
+  local_path=$repo
 
   if [[ ! -d $local_path ]]; then
     git clone git@github.com:$user/$repo.git $local_path
