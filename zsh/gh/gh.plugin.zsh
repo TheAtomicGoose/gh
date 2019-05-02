@@ -14,7 +14,7 @@ function gh () {
     return 127
   fi
 
-  typeset +x directory=$HOME/src/github.com/$account/$repo
+  typeset +x directory=$HOME/src/github/$repo
   if [[ ! -a $directory ]]; then
     git clone git@github.com:$account/$repo.git $directory
     if [[ ! -a $directory ]]; then
